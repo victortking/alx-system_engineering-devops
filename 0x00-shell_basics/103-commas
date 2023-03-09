@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1A | awk '{printf "%s%s", $0, (/^.*\/$/ ? "" : ",")}' | LC_COLLATE=C sort -df | tr '\n' ','; echo
