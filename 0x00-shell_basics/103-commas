@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1a --group-directories-first | sed -E 's/([^\/]+)$/&,/' | tr '\n' ',' | sed -E 's/,$/\n/'
+ls -mpva
