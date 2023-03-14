@@ -1,2 +1,2 @@
 #!/bin/bash
-awk -F '\t' '{print $1}' <<< $(cat) | sort | uniq -c | sort -rn | head -n 11
+awk '{a[$1]++}END{for(i in a)print i,a[i]}' | sort -nrk2 | head -n11
