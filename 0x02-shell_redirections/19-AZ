@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "output | tr 'Ac' 'Ze'
+echo "output" | tr 'Ac' 'Ze'
